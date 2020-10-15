@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    name: A job to run github action
+    steps:
+    - name: Run Action Step
+      id: hello
+      uses: LakshitF/pylint3-action@master
+      with:
+        filename: 'final.py'
