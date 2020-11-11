@@ -81,7 +81,7 @@ class BikeRental:
         print("We have currently {} bikes available to rent.".format(self.stock))
         return self.stock
 
-    def rentBikeOnHourlyBasis(self, n):
+    """def rentBikeOnHourlyBasis(self, n):
         """
         Rents a bike on hourly basis to a customer.
         """
@@ -100,7 +100,8 @@ class BikeRental:
             print("We hope that you enjoy our service.")
 
             self.stock -= n
-            return now      
+            return now   
+           """
      
     def rentBikeOnDailyBasis(self, n):
         """
