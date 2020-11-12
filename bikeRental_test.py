@@ -95,7 +95,7 @@ class BikeRentalTest(unittest.TestCase):
         request = customer.returnBike()
         self.assertEqual(shop.returnBike(request), 0)
 
-    """
+   
     def test_returnBike_for_invalid_numOfBikes(self):
      
         # create a shop and a customer
@@ -111,7 +111,7 @@ class BikeRentalTest(unittest.TestCase):
 
         request = customer.returnBike()
         self.assertIsNone(shop.returnBike(request))
-"""
+
 
     def test_returnBike_for_valid_credentials(self):
      
