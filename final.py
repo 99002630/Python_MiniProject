@@ -124,6 +124,26 @@ class BikeRental:
             self.stock -= n
             return now
         
+      def rentBikeOnWeeklyBasis(self, n):
+        """
+        Rents a bike on weekly basis to a customer.
+        """
+        if n <= 0:
+            print("Number of bikes should be positive!")
+            return None
+
+        elif n > self.stock:
+            print("Sorry! We have currently {} bikes available to rent.".format(self.stock))
+            return None        
+        
+        else:
+            now = datetime.datetime.now()
+            print("You have rented {} bike(s) on weekly basis today at {} hours.".format(n, now.hour))
+            print("You will be charged $60 for each week per bike.")
+            print("We hope that you enjoy our service.")
+            self.stock -= n
+
+            return now   
   
     
 
